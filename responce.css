@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    background-image: url(1541365_4006.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+ 
+nav .logo{
+    color: white;
+    font-size: 30px;
+    line-height: 70px;
+    font-weight: bolder;
+    padding-left: 40px;
+}
+
+nav{
+    height: 70px;
+    background: rgba(36, 66, 72, 0.749);
+    box-shadow: 0 3px 10px 3px rgba(15, 15, 15, 0.432);
+    
+}
+
+nav ul li{
+    margin-right: 70px;
+    display: inline-block; 
+}
+ 
+nav ul li a {
+    color: white;
+    display: block;
+    padding: 0 15px;
+    line-height: 70px;
+    font-size: 20px; 
+    transition: 0.5s linear;
+}
+
+nav ul ul{
+    position: absolute;
+    top: 80px; 
+    opacity: 0;
+    visibility: hidden;
+}
+
+nav ul li a:hover{  
+     border-radius: 2rem;
+     border: none;
+     animation-name: sahil;
+     animation-timing-function:ease;
+     animation-duration: 1s;
+     animation-iteration-count: calc(1);
+}
+
+@keyframes sahil {
+    0%{
+        transform: skewY(0);
+        background-color: rgba(0, 0, 0, 0.192);
+    }
+    100%{
+        transform: skewY(20deg);
+        background: rgba(36, 66, 72, 0.525);
+    }
+    
+}
+
+nav ul li:hover > ul{
+    top: 70px;
+    opacity: 1;
+    visibility: visible;
+    transition: .3s linear;
+} 
+
+nav ul ul li{
+    width: 120px;
+    display: list-item;
+    position: relative;
+    border: 1px solid rgba(34, 55, 59, 0.767);
+    border-top: none;
+    box-shadow:4px 4px 4px 4px  rgba(15, 15, 15, 0.237);
+}
+
+nav ul ul li:hover{
+    border: none;
+    justify-content: center;
+    display:flex; 
+    box-shadow: none;
+
+}
+
+nav ul ul li a{
+    line-height: 50px;
+    background: rgba(36, 66, 72, 0.749);
+}
+
+
+nav ul ul ul li{
+    position: relative;
+    top: -70px ;
+    left: 153px;
+    z-index: 3;
+}
+ 
