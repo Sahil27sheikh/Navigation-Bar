@@ -1,6 +1,7 @@
 <pre>
 <h2>Navigation Bar</h2>
 <b>In this project i am creat the navigation panel using only html and css.</b>
+
 <b>Functions:</b>
 &#10148;After hover the element it was a change the background color skew 20 degree in Y axis
 and borders are curve in some amount.
